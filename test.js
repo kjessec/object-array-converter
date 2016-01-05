@@ -1,12 +1,22 @@
 var test = require('tape');
 var convert = require('./index');
 
-var obj = { a: 'weee', b: 'wooo', c: 'pooop' };
+var obj = {
+  a: {
+    test: 1
+  },
+  b: {
+    test: 2
+  },
+  c: {
+    test: 3
+  }
+};
 
 var arr = [
-  { key: 'a', value: 'weee' },
-  { key: 'b', value: 'wooo' },
-  { key: 'c', value: 'pooop' }
+  { $key: 'a', test: 1 },
+  { $key: 'b', test: 2 },
+  { $key: 'c', test: 3 }
 ];
 
 test('convert object keys/values to array of objects', function (t) {
