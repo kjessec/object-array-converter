@@ -1,5 +1,8 @@
 # object-array-converter
 
+# This is heavily modified. Read test.js to see the changes maybe?
+
+
 ## Install
 
 ```
